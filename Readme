@@ -1,0 +1,21 @@
+What was wrong in old version of module:
+- wrong name of file "mysearch.module.php", module file must be in "*.module" format
+- in hook_menu wrong url format, it should end with % and there must be 'page arguments' for transfer search argument to function
+- main function mysearch_searchpage must take on search argument
+- title in main page must sets in hook_menu, for dynamic title i have use 'title callback' function and 'title arguments'
+- query in main function wrong and use standard query is wrong way
+- load each node in cycle will make many query to db it's wrong way too
+- to make link better way it's to use l() function
+- to make link theme('item_list')
+- use print_r in module not correct
+
+What could be done:
+- templates for results
+- options to use revisions
+- options to count of display and sorting
+- admin section to set options
+- link from module install to admin section and permissions
+- indexing content for smaller loads
+- automatic table creating in db when module install
+
+Considering 1 hour estimate, I think that coped with task.
